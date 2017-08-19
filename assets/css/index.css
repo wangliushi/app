@@ -1,3 +1,1023 @@
-body {
-  background-color: #ddd;
-  font-size: 12px; }
+.wang {
+  width: 1349px;
+  height: 2991px;
+}
+
+.wang a {
+  float: left;
+  margin-top: 20.5px;
+}
+
+.wang .header {
+  width: 1000px;
+  margin: 0 auto;
+  height: 78px;
+}
+
+.wang .input {
+  float: left;
+  width: 300px;
+  height: 36px;
+  margin: 20px 0 0 40px;
+  border: 1px solid #ccc;
+}
+
+.wang .input input {
+  width: 249px;
+  height: 24px;
+  padding: 5px 0;
+  margin-left: 14px;
+  border: none;
+  outline: none;
+}
+
+.wang .sos {
+  float: right;
+  text-align: center;
+  width: 34px;
+  height: 34px;
+  line-height: 34px;
+}
+
+.wang .sos .icon-sousuo1 {
+  font-size: 20px;
+  color: #666;
+}
+
+.wang .sos .icon-sousuo1:hover {
+  color: #169af3;
+}
+
+.wang .you {
+  float: right;
+  margin-top: 26.5px;
+  width: 402px;
+  height: 25px;
+  line-height: 25px;
+  font-size: 13px;
+}
+
+.wang .you .you-a {
+  float: left;
+  height: 18px;
+  margin-top: 3.5px;
+  padding-right: 15px;
+  border-right: 1px solid #dbdbdb;
+}
+
+.wang .you .you-a a {
+  margin: -3.5px 15px 0 15px;
+  color: #777;
+}
+
+.wang .you .you-a a:hover {
+  color: #169af3;
+}
+
+.wang .you .you-b {
+  float: right;
+  margin-top: -2.5px;
+}
+
+.wang .you .you-b a {
+  margin: 0 0 0 10px;
+  color: #777;
+  display: inline-block;
+  width: 48px;
+  height: 28px;
+  text-align: center;
+  line-height: 28px;
+  border-radius: 2px;
+}
+
+.wang .you .you-b .yanse-denglu {
+  background: #169af3;
+  color: #fff;
+  border: 1px solid #169af3;
+}
+
+.wang .you .you-b .yanse-denglu:hover {
+  background: #0c8ed9;
+}
+
+.wang .you .you-b .yanse-zhuce {
+  border: 1px solid #dbdbdb;
+}
+
+.wang .you .you-b .yanse-zhuce:hover {
+  color: #169af3;
+  border: 1px solid #0c8ed9;
+}
+
+.navbar {
+  width: 1349px;
+  height: 55px;
+  line-height: 55px;
+  background: #2c323b;
+}
+
+.navbar .navbar-daohang {
+  width: 1000px;
+  margin: 0 auto;
+  height: 55px;
+}
+
+.navbar .navbar-daohang > .navbar-shouye {
+  float: left;
+}
+
+.navbar .navbar-daohang > .navbar-shouye li {
+  float: left;
+}
+
+.navbar .navbar-daohang > .navbar-shouye li a {
+  padding: 0 30px;
+  color: #ddd;
+  font-size: 16px;
+  height: 55px;
+  margin: 0px;
+}
+
+.navbar .navbar-daohang > .navbar-shouye li a:hover {
+  background: #0c8ed9;
+}
+
+.navbar .navbar-daohang > .navbar-shouye .service {
+  position: relative;
+}
+
+.navbar .navbar-daohang > .navbar-shouye .service:hover .service-list {
+  display: block;
+}
+
+.navbar .navbar-daohang > .navbar-shouye .service .service-list {
+  position: absolute;
+  background: #2c323b;
+  top: 55px;
+  left: 0;
+  width: 100%;
+  height: 152px;
+  line-height: 38px;
+  text-align: center;
+  display: none;
+  z-index: 99;
+}
+
+.navbar .navbar-daohang > .navbar-shouye .service .service-list li {
+  width: 100%;
+}
+
+.navbar .navbar-daohang > .navbar-shouye .service .service-list li a {
+  height: 38px;
+  padding: 0 40.37px;
+}
+
+.navbar .navbar-daohang > .navbar-shouye .service .service-list li a:hover {
+  color: #fff;
+  background: #252b34;
+}
+
+.navbar .navbar-shangcheng {
+  float: right;
+  width: 445px;
+  height: 35px;
+}
+
+.navbar .navbar-shangcheng li {
+  float: left;
+  margin-left: 33px;
+}
+
+.navbar .navbar-shangcheng li a {
+  padding: 0;
+  color: #ddd;
+  font-size: 13px;
+  margin: 0px;
+}
+
+.navbar .navbar-shangcheng li a:hover {
+  color: #169af3;
+}
+
+.navbar .navbar-shangcheng li a .iconfont {
+  font-size: 13px;
+}
+
+.lbt {
+  position: relative;
+  width: 1349px;
+  height: 445px;
+  overflow: hidden;
+}
+
+.lbt ul {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.lbt ul li {
+  float: left;
+  display: none;
+}
+
+.lbt ul li:first-child {
+  display: block;
+}
+
+.lbt ul li a {
+  margin: 0;
+}
+
+.lbt:hover .left {
+  display: block;
+  background: rgba(100, 100, 100, 0.2);
+}
+
+.lbt:hover .right {
+  display: block;
+  background: rgba(100, 100, 100, 0.2);
+}
+
+.lbt .left,
+.lbt .right {
+  position: absolute;
+  top: 167.5px;
+  width: 60px;
+  height: 110px;
+  line-height: 110px;
+  text-align: center;
+  display: none;
+}
+
+.lbt .left .iconfont,
+.lbt .right .iconfont {
+  font-size: 50px;
+  color: #ddd;
+}
+
+.lbt .left:hover,
+.lbt .right:hover {
+  background: rgba(51, 51, 51, 0.5);
+}
+
+.lbt .left:hover .iconfont,
+.lbt .right:hover .iconfont {
+  color: #fff;
+}
+
+.lbt .left {
+  left: 0;
+}
+
+.lbt .right {
+  right: 0;
+}
+
+.lbt .ol {
+  position: absolute;
+  display: flex;
+  top: 350px;
+  width: 100%;
+  height: 20px;
+  line-height: 20px;
+  font-size: 0;
+  z-index: 50;
+  justify-content: center;
+  background: transparent;
+}
+
+.lbt .ol a {
+  width: 6px;
+  height: 6px;
+  margin: 4px 10px 0 10px;
+  border-radius: 50%;
+  background: #ddd;
+}
+
+.lbt .ol .active {
+  background-color: #fff;
+  border: 2px solid #fff;
+}
+
+.lbt .yincang {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+  background: rgba(100, 100, 100, 0.4);
+}
+
+.lbt .yincang div {
+  width: 615px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+
+.lbt .yincang div a {
+  margin: 0;
+  color: #fff;
+}
+
+.lbt .yincang div a img {
+  vertical-align: middle;
+  margin-right: 15px;
+}
+
+.jingxuan {
+  width: 1000px;
+  margin: 0 auto;
+  height: 399px;
+  margin-top: 40px;
+}
+
+.jingxuan .gedan {
+  float: left;
+  width: 655px;
+  height: 390px;
+}
+
+.jingxuan .gedan .gedan-one {
+  height: 30px;
+  font-size: 30px;
+  line-height: 30px;
+  padding-bottom: 30px;
+  color: #555;
+  background: #fff;
+}
+
+.jingxuan .gedan .gedan-one h3 {
+  float: left;
+}
+
+.jingxuan .gedan .gedan-one h3 span {
+  color: #169af3;
+}
+
+.jingxuan .gedan .gedan-one a {
+  float: right;
+  margin: 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.jingxuan .gedan .gedan-one a:hover {
+  color: #169af3;
+}
+
+.jingxuan .gedan .gedan-two {
+  width: 655px;
+  height: 330px;
+  overflow: hidden;
+}
+
+.jingxuan .gedan .gedan-two a {
+  margin: 0;
+}
+
+.jingxuan .gedan .gedan-two div {
+  width: 160px;
+  height: 160px;
+  float: left;
+}
+
+.jingxuan .gedan .gedan-two .datu {
+  position: relative;
+  width: 325px;
+  height: 325px;
+}
+
+.jingxuan .gedan .gedan-two .datu img {
+  width: 325px;
+  height: 325px;
+}
+
+.jingxuan .gedan .gedan-two .datu > p {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 152px;
+  height: 30px;
+  line-height: 30px;
+  color: #fff;
+  font-size: 14px;
+  background: url("../images/Bg.png");
+}
+
+.jingxuan .gedan .gedan-two .datu > p .iconfont {
+  margin-left: 70px;
+  font-size: 16px;
+}
+
+.jingxuan .gedan .gedan-two .datu > div {
+  position: absolute;
+  bottom: 0;
+  width: 309px;
+  height: 38px;
+  padding: 6px 8px;
+  line-height: 19px;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.jingxuan .gedan .gedan-two .datu > div p {
+  font-size: 14px;
+  color: #fff;
+}
+
+.jingxuan .gedan .gedan-two .datu > div .p {
+  color: #cfcfcf;
+}
+
+.jingxuan .gedan .gedan-two .datu .beijing {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 325px;
+  height: 325px;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 0;
+  display: none;
+}
+
+.jingxuan .gedan .gedan-two .datu .beijing .iconfont {
+  position: absolute;
+  bottom: 7px;
+  right: 10px;
+  font-size: 36px;
+  color: #cfcfcf;
+}
+
+.jingxuan .gedan .gedan-two .datu .beijing .iconfont:hover {
+  color: #fff;
+}
+
+.jingxuan .gedan .gedan-two .datu:hover .beijing {
+  display: block;
+}
+
+.jingxuan .gedan .gedan-two .xiaotu {
+  position: relative;
+  margin: 0 0 5px 5px;
+  width: 160px;
+  height: 160px;
+}
+
+.jingxuan .gedan .gedan-two .xiaotu img {
+  width: 160px;
+  height: 160px;
+}
+
+.jingxuan .gedan .gedan-two .xiaotu > p {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 160px;
+  height: 30px;
+  line-height: 30px;
+  color: #fff;
+  background: url("../images/Bg.png");
+}
+
+.jingxuan .gedan .gedan-two .xiaotu > p .iconfont {
+  float: right;
+  margin-right: 10px;
+}
+
+.jingxuan .gedan .gedan-two .xiaotu > div {
+  position: absolute;
+  bottom: 0;
+  width: 144px;
+  height: 38px;
+  padding: 6px 8px;
+  line-height: 19px;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.jingxuan .gedan .gedan-two .xiaotu > div p {
+  font-size: 14px;
+  color: #fff;
+}
+
+.jingxuan .gedan .gedan-two .xiaotu > div .p {
+  color: #cfcfcf;
+}
+
+.jingxuan .gedan .gedan-two .xiaotu .beijing {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 160px;
+  height: 160px;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 0;
+  display: none;
+}
+
+.jingxuan .gedan .gedan-two .xiaotu .beijing .iconfont {
+  position: absolute;
+  bottom: 7px;
+  right: 10px;
+  font-size: 36px;
+  color: #cfcfcf;
+}
+
+.jingxuan .gedan .gedan-two .xiaotu .beijing .iconfont:hover {
+  color: #fff;
+}
+
+.jingxuan .gedan .gedan-two .xiaotu:hover .beijing {
+  display: block;
+}
+
+.jingxuan .bangdan {
+  float: right;
+  width: 320px;
+  height: 60px;
+  background: #fff;
+}
+
+.jingxuan .bangdan .bangdan-one {
+  height: 30px;
+  font-size: 30px;
+  line-height: 30px;
+  padding-bottom: 30px;
+  color: #555;
+  background: #fff;
+}
+
+.jingxuan .bangdan .bangdan-one h3 {
+  float: left;
+}
+
+.jingxuan .bangdan .bangdan-one h3 span {
+  color: #169af3;
+}
+
+.jingxuan .bangdan .bangdan-one a {
+  float: right;
+  margin: 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.jingxuan .bangdan .bangdan-one a:hover {
+  color: #169af3;
+}
+
+.jingxuan .bangdan .bangdan-two {
+  width: 320px;
+  height: 325px;
+}
+
+.jingxuan .bangdan .bangdan-two > a {
+  position: relative;
+  margin: 0;
+  width: 320px;
+  height: 98px;
+  margin-bottom: 15px;
+}
+
+.jingxuan .bangdan .bangdan-two > a:hover .yiyu {
+  display: block;
+}
+
+.jingxuan .bangdan .bangdan-two > a img {
+  float: left;
+  width: 98px;
+  height: 98px;
+}
+
+.jingxuan .bangdan .bangdan-two > a div {
+  position: relative;
+  float: left;
+  width: 200px;
+  height: 68px;
+  padding: 15px 10px;
+  background: #f6f6f6;
+  color: #555;
+  font-size: 14px;
+}
+
+.jingxuan .bangdan .bangdan-two > a div .p {
+  color: #333;
+  font-weight: 700;
+}
+
+.jingxuan .bangdan .bangdan-two > a div p {
+  height: 24px;
+  line-height: 24px;
+}
+
+.jingxuan .bangdan .bangdan-two > a div .iconfont {
+  position: absolute;
+  top: 42px;
+  right: 10px;
+  font-size: 14px;
+  color: #555;
+}
+
+.jingxuan .bangdan .bangdan-two > a .yiyu {
+  position: absolute;
+  top: 0;
+  width: 78px;
+  height: 68px;
+  z-index: 10;
+  display: none;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.jingxuan .bangdan .bangdan-two > a .yiyu .iconfont {
+  margin-top: -10px;
+  margin-right: 20px;
+  font-size: 36px;
+  color: #cfcfcf;
+}
+
+.jingxuan .bangdan .bangdan-two > a .yiyu .iconfont:hover {
+  color: #fff;
+}
+
+.changtu {
+  width: 1000px;
+  height: 80px;
+  margin: 0 auto;
+}
+
+.changtu a {
+  margin: 0;
+}
+
+.xinge {
+  width: 1000px;
+  height: 375px;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+.xinge .shoufa {
+  float: left;
+  width: 650px;
+  height: 375px;
+}
+
+.xinge .shoufa .shoufa-one {
+  height: 30px;
+  line-height: 30px;
+  padding-bottom: 20px;
+  margin-bottom: 10px;
+  color: #555;
+  background: #fff;
+  border-bottom: 1px solid #dbdbdb;
+}
+
+.xinge .shoufa .shoufa-one h3 {
+  font-size: 30px;
+  float: left;
+}
+
+.xinge .shoufa .shoufa-one h3 span {
+  color: #169af3;
+}
+
+.xinge .shoufa .shoufa-one div {
+  float: left;
+  margin-left: 25px;
+}
+
+.xinge .shoufa .shoufa-one div span {
+  float: left;
+  margin-right: 20px;
+  font-size: 14px;
+}
+
+.xinge .shoufa .shoufa-one div span:hover {
+  color: #169af3;
+}
+
+.xinge .shoufa .shoufa-one a {
+  float: right;
+  margin: 0;
+  padding: 0 7.5px;
+  font-size: 14px;
+  color: #555;
+  border: 1px solid #dbdbdb;
+}
+
+.xinge .shoufa .shoufa-one a:hover {
+  color: #169af3;
+  border: 0.8px solid #169af3;
+}
+
+.xinge .shoufa .shoufa-two {
+  position: relative;
+  height: 280px;
+}
+
+.xinge .shoufa .shoufa-two a {
+  width: 630px;
+  height: 35px;
+  margin: 0;
+  padding: 0 10px;
+  color: #333;
+  font-size: 13px;
+  line-height: 35px;
+}
+
+.xinge .shoufa .shoufa-two a:hover {
+  color: #169af3;
+}
+
+.xinge .shoufa .shoufa-two a:hover .dier {
+  display: none;
+}
+
+.xinge .shoufa .shoufa-two a .dier {
+  margin-left: 5px;
+}
+
+.xinge .shoufa .shoufa-two a .disan {
+  float: right;
+}
+
+.xinge .shoufa .shoufa-two a .disan .iconfont {
+  margin-right: 10px;
+}
+
+.xinge .shoufa .shoufa-two .zuoyou {
+  position: absolute;
+  bottom: -15px;
+  left: 293px;
+  width: 62px;
+  height: 14px;
+  font-size: 8px;
+}
+
+.xinge .tuijian {
+  float: right;
+  width: 320px;
+  height: 50px;
+  background: #fff;
+}
+
+.xinge .tuijian .tuijian-one {
+  height: 30px;
+  font-size: 30px;
+  line-height: 30px;
+  padding-bottom: 20px;
+  color: #555;
+  background: #fff;
+}
+
+.xinge .tuijian .tuijian-one h3 {
+  float: left;
+}
+
+.xinge .tuijian .tuijian-one h3 span {
+  color: #169af3;
+}
+
+.xinge .tuijian .tuijian-one a {
+  float: right;
+  margin: 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.xinge .tuijian .tuijian-one a:hover {
+  color: #169af3;
+}
+
+.xinge .tuijian .tuijian-two {
+  width: 320px;
+  height: 312px;
+}
+
+.xinge .tuijian .tuijian-two a {
+  margin: 0;
+}
+
+.xinge .tuijian .tuijian-two .taiyang {
+  position: relative;
+  width: 320px;
+  height: 175px;
+  margin-bottom: 12px;
+}
+
+.xinge .tuijian .tuijian-two .taiyang:hover .beijing {
+  display: block;
+}
+
+.xinge .tuijian .tuijian-two .taiyang img {
+  width: 320px;
+  height: 175px;
+}
+
+.xinge .tuijian .tuijian-two .taiyang > div {
+  position: absolute;
+  bottom: 0;
+  width: 304px;
+  height: 38px;
+  padding: 6px 8px;
+  line-height: 19px;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.xinge .tuijian .tuijian-two .taiyang > div p {
+  font-size: 14px;
+  color: #fff;
+}
+
+.xinge .tuijian .tuijian-two .taiyang > div .p {
+  color: #cfcfcf;
+}
+
+.xinge .tuijian .tuijian-two .taiyang .beijing {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 320px;
+  height: 175px;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 0;
+  display: none;
+}
+
+.xinge .tuijian .tuijian-two .taiyang .beijing .iconfont {
+  position: absolute;
+  top: 69px;
+  left: 142px;
+  font-size: 46px;
+  color: #cfcfcf;
+}
+
+.xinge .tuijian .tuijian-two .taiyang .beijing .iconfont:hover {
+  color: #fff;
+}
+
+.xinge .tuijian .tuijian-two .taiyang:hover .beijing {
+  display: block;
+}
+
+.xinge .tuijian .tuijian-two .yueliang {
+  position: relative;
+  float: left;
+  width: 154px;
+  height: 125px;
+}
+
+.xinge .tuijian .tuijian-two .yueliang:hover .p {
+  color: #009af3;
+}
+
+.xinge .tuijian .tuijian-two .yueliang:hover .beijing {
+  display: block;
+}
+
+.xinge .tuijian .tuijian-two .yueliang img {
+  width: 154px;
+  height: 84px;
+}
+
+.xinge .tuijian .tuijian-two .yueliang p {
+  margin-top: 5px;
+  font-size: 12px;
+  color: #888;
+}
+
+.xinge .tuijian .tuijian-two .yueliang .p {
+  color: #444;
+  font-size: 14px;
+}
+
+.xinge .tuijian .tuijian-two .yueliang .beijing {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 154px;
+  height: 84px;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 0;
+  display: none;
+}
+
+.xinge .tuijian .tuijian-two .yueliang .beijing .iconfont {
+  position: absolute;
+  top: 19px;
+  left: 54px;
+  font-size: 46px;
+  color: #cfcfcf;
+}
+
+.xinge .tuijian .tuijian-two .yueliang .beijing .iconfont:hover {
+  color: #fff;
+}
+
+.xinge .tuijian .tuijian-two .diqiu {
+  margin-left: 12px;
+}
+
+.kongbai {
+  width: 1000px;
+  margin: 0 auto;
+  height: 140px;
+  background: #999;
+}
+
+.remen {
+  width: 1000px;
+  margin: 0 auto;
+  height: 370px;
+  margin-top: 40px;
+  background: pink;
+}
+
+.remen .diantai {
+  float: left;
+  width: 650px;
+  height: 390px;
+}
+
+.remen .diantai .diantai-one {
+  height: 30px;
+  font-size: 30px;
+  line-height: 30px;
+  padding-bottom: 30px;
+  color: #555;
+  background: #fff;
+}
+
+.remen .diantai .diantai-one h3 {
+  float: left;
+}
+
+.remen .diantai .diantai-one h3 span {
+  color: #169af3;
+}
+
+.remen .diantai .diantai-one a {
+  float: right;
+  margin: 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.remen .diantai .diantai-one a:hover {
+  color: #169af3;
+}
+
+.remen .diantai-two {
+  width: 650px;
+  height: 310px;
+  background: #fff;
+}
+
+.remen .diantai-two a {
+  position: relative;
+  width: 100px;
+  height: 130px;
+  float: left;
+  margin: 0 37px 25px 0;
+}
+
+.remen .diantai-two a img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+.remen .diantai-two a p {
+  color: #333;
+  font-size: 14px;
+  text-align: center;
+}
+
+.remen .diantai-two a div {
+  position: absolute;
+  top: 0;
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+  display: none;
+}
+
+.remen .diantai-two a div .iconfont {
+  font-size: 34px;
+  color: #fff;
+}
+
+.remen .diantai-two a:hover div {
+  display: block;
+}
+
+.remen .diantai-two a:hover p {
+  color: #169af3;
+}
+
+.remen .diantai-two .meiyong {
+  margin-right: 0;
+}

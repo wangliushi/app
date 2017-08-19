@@ -1,4 +1,891 @@
-body {
-    background-color: #ddd;
-    font-size: 12px;
+@mixin container {
+    width: 1000px;
+    margin: 0 auto;
 }
+
+@mixin left {
+    float: left;
+}
+
+@mixin right {
+    float: right;
+}
+
+@mixin align {
+    text-align: center;
+}
+
+@mixin color {
+    color: #169af3;
+}
+
+//头部开始
+.wang {
+    width: 1349px;
+    height: 2991px;
+    a {
+        @include left;
+        margin-top: 20.5px;
+    }
+    .header {
+        @include container;
+        height: 78px;
+    }
+    .input {
+        @include left;
+        width: 300px;
+        height: 36px;
+        margin: 20px 0 0 40px;
+        border: 1px solid #ccc;
+        input {
+            width: 249px;
+            height: 24px;
+            padding: 5px 0;
+            margin-left: 14px;
+            border: none;
+            outline: none;
+        }
+    }
+    .sos {
+        @include right;
+        @include align;
+        width: 34px;
+        height: 34px;
+        line-height: 34px;
+        .icon-sousuo1 {
+            font-size: 20px;
+            color: #666;
+        }
+        .icon-sousuo1:hover {
+            @include color;
+        }
+    }
+    .you {
+        @include right;
+        margin-top: 26.5px;
+        width: 402px;
+        height: 25px;
+        line-height: 25px;
+        font-size: 13px;
+
+        .you-a {
+            @include left;
+            height: 18px;
+            margin-top: 3.5px;
+            padding-right: 15px;
+            border-right: 1px solid #dbdbdb;
+            a {
+                margin: -3.5px 15px 0 15px;
+                color: #777;
+                &:hover {
+                    @include color;
+                }
+            }
+        }
+        .you-b {
+            @include right;
+            margin-top: -2.5px;
+            a {
+                margin: 0 0 0 10px;
+                color: #777;
+                display: inline-block;
+                width: 48px;
+                height: 28px;
+                @include align;
+                line-height: 28px;
+                border-radius: 2px;
+            }
+            .yanse-denglu {
+                background: #169af3;
+                color: #fff;
+                border: 1px solid #169af3;
+                &:hover {
+                    background: #0c8ed9;
+                }
+            }
+            .yanse-zhuce {
+                border: 1px solid #dbdbdb;
+                &:hover {
+                    @include color;
+                    border: 1px solid #0c8ed9;
+                }
+            }
+        }
+    }
+}
+
+//头部结束
+//导航条开始
+.navbar {
+    width: 1349px;
+    height: 55px;
+    line-height: 55px;
+    background: #2c323b;
+    .navbar-daohang {
+        @include container;
+        height: 55px;
+        >.navbar-shouye {
+            @include left;
+            li {
+                @include left;
+                a {
+                    padding: 0 30px;
+                    color: #ddd;
+                    font-size: 16px;
+                    height: 55px;
+                    margin: 0px;
+                    &:hover {
+                        background: #0c8ed9;
+                    }
+                }
+            }
+            .service {
+                position: relative;
+                &:hover .service-list {
+                    display: block;
+                }
+                .service-list {
+                    position: absolute;
+                    background: #2c323b;
+                    top: 55px;
+                    left: 0;
+                    width: 100%;
+                    height: 152px;
+                    line-height: 38px;
+                    text-align: center;
+                    display: none;
+                    z-index: 99;
+                    li {
+                        width: 100%;
+                        a {
+                            height: 38px;
+                            padding: 0 40.37px;
+                            &:hover {
+                                color: #fff;
+                                background: #252b34;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .navbar-shangcheng {
+        @include right;
+        width: 445px;
+        height: 35px;
+        li {
+            @include left;
+            margin-left: 33px;
+            a {
+                padding: 0;
+                color: #ddd;
+                font-size: 13px;
+                margin: 0px;
+                &:hover {
+                    @include color;
+                }
+                .iconfont {
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+}
+
+//导航条结束
+//轮播图开始
+.lbt {
+    position: relative;
+    width: 1349px;
+    height: 445px;
+    overflow: hidden;
+    ul {
+        position: absolute;
+        top: 0;
+        left: 0;
+        li {
+            @include left;
+            display: none;
+            &:first-child {
+                display: block;
+            }
+            a {
+                margin: 0;
+            }
+        }
+    }
+    &:hover .left {
+        display: block;
+        background: rgba(100, 100, 100, 0.2);
+    }
+    &:hover .right {
+        display: block;
+        background: rgba(100, 100, 100, 0.2);
+    }
+    .left,
+    .right {
+        position: absolute;
+        top: 167.5px;
+        width: 60px;
+        height: 110px;
+        line-height: 110px;
+        text-align: center;
+        display: none;
+        .iconfont {
+            font-size: 50px;
+            color: #ddd;
+        }
+        &:hover {
+            background: rgba(51, 51, 51, 0.5);
+        }
+        &:hover .iconfont {
+            color: #fff;
+        }
+    }
+    .left {
+        left: 0;
+    }
+    .right {
+        right: 0;
+    }
+    .ol {
+        position: absolute;
+        display: flex;
+        top: 350px;
+        width: 100%;
+        height: 20px;
+        line-height: 20px;
+        font-size: 0;
+        z-index: 50;
+        justify-content: center;
+        background: rgba(0, 0, 0, 0);
+        a {
+            width: 6px;
+            height: 6px;
+            margin: 4px 10px 0 10px;
+            border-radius: 50%;
+            background: #ddd;
+        }
+    }
+    .ol .active {
+        background-color: #fff;
+        border: 2px solid #fff;
+    }
+    .yincang {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 60px;
+        line-height: 60px;
+        background: rgba(100, 100, 100, 0.4);
+        div {
+            width: 615px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-around;
+            a {
+                margin: 0;
+                color: #fff;
+                img {
+                    vertical-align: middle;
+                    margin-right: 15px;
+                }
+            }
+        }
+    }
+}
+
+//轮播图结束
+// 精选开始
+.jingxuan {
+    @include container;
+    height: 399px;
+    margin-top: 40px;
+    .gedan {
+        float: left;
+        width: 655px;
+        height: 390px;
+        .gedan-one {
+            height: 30px;
+            font-size: 30px;
+            line-height: 30px;
+            padding-bottom: 30px;
+            color: #555;
+            background: #fff;
+            h3 {
+                float: left;
+                span {
+                    color: #169af3;
+                }
+            }
+            a {
+                float: right;
+                margin: 0;
+                font-size: 14px;
+                color: #555;
+                &:hover {
+                    color: #169af3;
+                }
+            }
+        }
+        .gedan-two {
+            width: 655px;
+            height: 330px;
+            overflow: hidden;
+            a {
+                margin: 0;
+            }
+            div {
+                width: 160px;
+                height: 160px;
+                float: left;
+            }
+            .datu {
+                position: relative;
+                width: 325px;
+                height: 325px;
+                img {
+                    width: 325px;
+                    height: 325px;
+                }
+                >p {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    width: 152px;
+                    height: 30px;
+                    line-height: 30px;
+                    color: #fff;
+                    font-size: 14px;
+                    background: url('../images/Bg.png');
+                    .iconfont {
+                        margin-left: 70px;
+                        font-size: 16px;
+                    }
+                }
+                >div {
+                    position: absolute;
+                    bottom: 0;
+                    width: 309px;
+                    height: 38px;
+                    padding: 6px 8px;
+                    line-height: 19px;
+                    background: rgba(0, 0, 0, 0.5);
+                    p {
+                        font-size: 14px;
+                        color: #fff;
+                    }
+                    .p {
+                        color: #cfcfcf;
+                    }
+                }
+                .beijing {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 325px;
+                    height: 325px;
+                    background: rgba(0, 0, 0, 0.3);
+                    padding: 0;
+                    display: none;
+                    .iconfont {
+                        position: absolute;
+                        bottom: 7px;
+                        right: 10px;
+                        font-size: 36px;
+                        color: #cfcfcf;
+                        &:hover {
+                            color: #fff;
+                        }
+                    }
+                }
+                &:hover .beijing {
+                    display: block;
+                }
+            }
+            .xiaotu {
+                position: relative;
+                margin: 0 0 5px 5px;
+                width: 160px;
+                height: 160px;
+                img {
+                    width: 160px;
+                    height: 160px;
+                }
+                >p {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    width: 160px;
+                    height: 30px;
+                    line-height: 30px;
+                    color: #fff;
+                    background: url('../images/Bg.png');
+                    .iconfont {
+                        float: right;
+                        margin-right: 10px;
+                    }
+                }
+                >div {
+                    position: absolute;
+                    bottom: 0;
+                    width: 144px;
+                    height: 38px;
+                    padding: 6px 8px;
+                    line-height: 19px;
+                    background: rgba(0, 0, 0, 0.5);
+                    p {
+                        font-size: 14px;
+                        color: #fff;
+                    }
+                    .p {
+                        color: #cfcfcf;
+                    }
+                }
+                .beijing {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 160px;
+                    height: 160px;
+                    background: rgba(0, 0, 0, 0.3);
+                    padding: 0;
+                    display: none;
+                    .iconfont {
+                        position: absolute;
+                        bottom: 7px;
+                        right: 10px;
+                        font-size: 36px;
+                        color: #cfcfcf;
+                        &:hover {
+                            color: #fff;
+                        }
+                    }
+                }
+                &:hover .beijing {
+                    display: block;
+                }
+            }
+        }
+    }
+    .bangdan {
+        float: right;
+        width: 320px;
+        height: 60px;
+        background: #fff;
+        .bangdan-one {
+            height: 30px;
+            font-size: 30px;
+            line-height: 30px;
+            padding-bottom: 30px;
+            color: #555;
+            background: #fff;
+            h3 {
+                float: left;
+                span {
+                    color: #169af3;
+                }
+            }
+            a {
+                float: right;
+                margin: 0;
+                font-size: 14px;
+                color: #555;
+                &:hover {
+                    color: #169af3;
+                }
+            }
+        }
+        .bangdan-two {
+            width: 320px;
+            height: 325px;
+            >a {
+                position: relative;
+                margin: 0;
+                width: 320px;
+                height: 98px;
+                margin-bottom: 15px;
+                &:hover .yiyu {
+                    display: block;
+                }
+                img {
+                    float: left;
+                    width: 98px;
+                    height: 98px;
+                }
+                div {
+                    position: relative;
+                    float: left;
+                    width: 200px;
+                    height: 68px;
+                    padding: 15px 10px;
+                    background: #f6f6f6;
+                    color: #555;
+                    font-size: 14px;
+                    .p {
+                        color: #333;
+                        font-weight: 700;
+                    }
+                    p {
+                        height: 24px;
+                        line-height: 24px;
+                    }
+                    .iconfont {
+                        position: absolute;
+                        top: 42px;
+                        right: 10px;
+                        font-size: 14px;
+                        color: #555;
+                    }
+                }
+                .yiyu {
+                    position: absolute;
+                    top: 0;
+                    width: 78px;
+                    height: 68px;
+                    z-index: 10;
+                    display: none;
+                    background: rgba(0, 0, 0, 0.3);
+                    .iconfont {
+                        margin-top: -10px;
+                        margin-right: 20px;
+                        font-size: 36px;
+                        color: #cfcfcf;
+                        &:hover {
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// 精选结束
+.changtu {
+    width: 1000px;
+    height: 80px;
+    margin: 0 auto;
+    a {
+        margin: 0;
+    }
+}
+
+// 新歌开始
+.xinge {
+    width: 1000px;
+    height: 375px;
+    margin: 0 auto;
+    margin-top: 40px;
+    .shoufa {
+        float: left;
+        width: 650px;
+        height: 375px;
+        .shoufa-one {
+            height: 30px;
+            line-height: 30px;
+            padding-bottom: 20px;
+            margin-bottom: 10px;
+            color: #555;
+            background: #fff;
+            border-bottom: 1px solid #dbdbdb;
+            h3 {
+                font-size: 30px;
+                float: left;
+                span {
+                    color: #169af3;
+                }
+            }
+            div {
+                float: left;
+                margin-left: 25px;
+                span {
+                    float: left;
+                    margin-right: 20px;
+                    font-size: 14px;
+                    &:hover {
+                        color: #169af3;
+                    }
+                }
+            }
+            a {
+                float: right;
+                margin: 0;
+                padding: 0 7.5px;
+                font-size: 14px;
+                color: #555;
+                border: 1px solid #dbdbdb;
+                &:hover {
+                    color: #169af3;
+                    border: 0.8px solid #169af3;
+                }
+            }
+        }
+        .shoufa-two {
+            position: relative;
+            height: 280px;
+            a {
+                width: 630px;
+                height: 35px;
+                margin: 0;
+                padding: 0 10px;
+                color: #333;
+                font-size: 13px;
+                line-height: 35px;
+                &:hover {
+                    color: #169af3;
+                }
+                &:hover .dier {
+                    display: none;
+                } //     &:hover .disan .iconfont {
+                //     display: block;
+                // }
+                .dier {
+                    margin-left: 5px;
+                }
+                .disan {
+                    float: right;
+                    .iconfont {
+                        margin-right: 10px; // display: none;
+                    }
+                }
+            }
+            .zuoyou {
+                position: absolute;
+                bottom: -15px;
+                left: 293px;
+                width: 62px;
+                height: 14px;
+                font-size: 8px;
+            }
+        }
+    }
+    .tuijian {
+        float: right;
+        width: 320px;
+        height: 50px;
+        background: #fff;
+        .tuijian-one {
+            height: 30px;
+            font-size: 30px;
+            line-height: 30px;
+            padding-bottom: 20px;
+            color: #555;
+            background: #fff;
+            h3 {
+                float: left;
+                span {
+                    color: #169af3;
+                }
+            }
+            a {
+                float: right;
+                margin: 0;
+                font-size: 14px;
+                color: #555;
+                &:hover {
+                    color: #169af3;
+                }
+            }
+        }
+        .tuijian-two {
+            width: 320px;
+            height: 312px;
+            a {
+                margin: 0;
+            }
+            .taiyang {
+                position: relative;
+                width: 320px;
+                height: 175px;
+                margin-bottom: 12px;
+                &:hover .beijing {
+                    display: block;
+                }
+                img {
+                    width: 320px;
+                    height: 175px;
+                }
+                >div {
+                    position: absolute;
+                    bottom: 0;
+                    width: 304px;
+                    height: 38px;
+                    padding: 6px 8px;
+                    line-height: 19px;
+                    background: rgba(0, 0, 0, 0.5);
+                    p {
+                        font-size: 14px;
+                        color: #fff;
+                    }
+                    .p {
+                        color: #cfcfcf;
+                    }
+                }
+                .beijing {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 320px;
+                    height: 175px;
+                    background: rgba(0, 0, 0, 0.3);
+                    padding: 0;
+                    display: none;
+                    .iconfont {
+                        position: absolute;
+                        top: 69px;
+                        left: 142px;
+                        font-size: 46px;
+                        color: #cfcfcf;
+                        &:hover {
+                            color: #fff;
+                        }
+                    }
+                }
+                &:hover .beijing {
+                    display: block;
+                }
+            }
+            .yueliang {
+                position: relative;
+                float: left;
+                width: 154px;
+                height: 125px;
+                &:hover .p {
+                    color: #009af3;
+                }
+                &:hover .beijing {
+                    display: block;
+                }
+                img {
+                    width: 154px;
+                    height: 84px;
+                }
+                p {
+                    margin-top: 5px;
+                    font-size: 12px;
+                    color: #888;
+                }
+                .p {
+                    color: #444;
+                    font-size: 14px;
+                }
+                .beijing {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 154px;
+                    height: 84px;
+                    background: rgba(0, 0, 0, 0.3);
+                    padding: 0;
+                    display: none;
+                    .iconfont {
+                        position: absolute;
+                        top: 19px;
+                        left: 54px;
+                        font-size: 46px;
+                        color: #cfcfcf;
+                        &:hover {
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+            .diqiu {
+                margin-left: 12px;
+            }
+        }
+    }
+}
+
+// 新歌结束
+.kongbai {
+    @include container;
+    height: 140px;
+    background: #999;
+}
+
+// 热门开始
+.remen {
+    @include container;
+    height: 370px;
+    margin-top: 40px;
+    background: pink;
+    .diantai {
+        float: left;
+        width: 650px;
+        height: 390px;
+        .diantai-one {
+            height: 30px;
+            font-size: 30px;
+            line-height: 30px;
+            padding-bottom: 30px;
+            color: #555;
+            background: #fff;
+            h3 {
+                float: left;
+                span {
+                    color: #169af3;
+                }
+            }
+            a {
+                float: right;
+                margin: 0;
+                font-size: 14px;
+                color: #555;
+                &:hover {
+                    color: #169af3;
+                }
+            }
+        }
+    }
+    .diantai-two {
+        width: 650px;
+        height: 310px;
+        background: #fff;
+        a {
+            position: relative;
+            width: 100px;
+            height: 130px;
+            float: left;
+            margin: 0 37px 25px 0;
+            img {
+                width: 100px;
+                height: 100px;
+                margin-bottom: 10px;
+            }
+            p {
+                color: #333;
+                font-size: 14px;
+                @include align;
+            }
+            div {
+                position: absolute;
+                top: 0;
+                width: 100px;
+                height: 100px;
+                line-height: 100px;
+                @include align;
+                background: rgba(0, 0, 0, 0.3);
+                border-radius: 50%;
+                display: none;
+                .iconfont {
+                    font-size: 34px;
+                    color: #fff;
+                }
+            }
+            &:hover div {
+                display: block;
+            }
+            &:hover p {
+                @include color;
+            }
+        }
+        .meiyong {
+            margin-right: 0;
+        }
+    }
+}
+
+// 热门结束
