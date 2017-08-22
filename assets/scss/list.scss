@@ -1,0 +1,439 @@
+@mixin container {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+@mixin left {
+    float: left;
+}
+
+@mixin right {
+    float: right;
+}
+
+@mixin align {
+    text-align: center;
+}
+
+@mixin color {
+    color: #169af3;
+} //头部开始
+.wang {
+    width: 1349px;
+    height: 1960px;
+    a {
+        @include left;
+        margin-top: 20.5px;
+    }
+    .header {
+        @include container;
+        height: 78px;
+    }
+    .input {
+        @include left;
+        width: 300px;
+        height: 36px;
+        margin: 20px 0 0 40px;
+        border: 1px solid #ccc;
+        input {
+            width: 249px;
+            height: 24px;
+            padding: 5px 0;
+            margin-left: 14px;
+            border: none;
+            outline: none;
+        }
+    }
+    .sos {
+        @include right;
+        @include align;
+        width: 34px;
+        height: 34px;
+        line-height: 34px;
+        .icon-sousuo1 {
+            font-size: 20px;
+            color: #666;
+        }
+        .icon-sousuo1:hover {
+            @include color;
+        }
+    }
+    .you {
+        @include right;
+        margin-top: 26.5px;
+        width: 402px;
+        height: 25px;
+        line-height: 25px;
+        font-size: 13px;
+
+        .you-a {
+            @include left;
+            height: 18px;
+            margin-top: 3.5px;
+            padding-right: 15px;
+            border-right: 1px solid #dbdbdb;
+            a {
+                margin: -3.5px 15px 0 15px;
+                color: #777;
+                &:hover {
+                    @include color;
+                }
+            }
+        }
+        .you-b {
+            @include right;
+            margin-top: -2.5px;
+            a {
+                margin: 0 0 0 10px;
+                color: #777;
+                display: inline-block;
+                width: 48px;
+                height: 28px;
+                @include align;
+                line-height: 28px;
+                border-radius: 2px;
+            }
+            .yanse-denglu {
+                background: #169af3;
+                color: #fff;
+                border: 1px solid #169af3;
+                &:hover {
+                    background: #0c8ed9;
+                }
+            }
+            .yanse-zhuce {
+                border: 1px solid #dbdbdb;
+                &:hover {
+                    @include color;
+                    border: 1px solid #0c8ed9;
+                }
+            }
+        }
+    }
+} //头部结束
+//导航条开始
+.navbar {
+    width: 1349px;
+    height: 55px;
+    line-height: 55px;
+    background: #2c323b;
+    a {
+        margin: 0;
+    }
+    .navbar-daohang {
+        @include container;
+        height: 55px;
+        >.navbar-shouye {
+            @include left;
+            li {
+                @include left;
+                .liang {
+                    color: #fff;
+                    background: #0c8ed9;
+                }
+                a {
+                    padding: 0 30px;
+                    color: #ddd;
+                    font-size: 16px;
+                    height: 55px;
+                    &:hover {
+                        color: #fff;
+                        background: #0c8ed9;
+                    }
+                }
+            }
+            .service {
+                position: relative;
+                &:hover .service-list {
+                    display: block;
+                }
+                .service-list {
+                    position: absolute;
+                    background: #2c323b;
+                    top: 55px;
+                    left: 0;
+                    width: 100%;
+                    height: 152px;
+                    line-height: 38px;
+                    text-align: center;
+                    display: none;
+                    z-index: 99;
+                    li {
+                        width: 100%;
+                        a {
+                            height: 38px;
+                            padding: 0 40.37px;
+                            &:hover {
+                                color: #fff;
+                                background: #252b34;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .navbar-shangcheng {
+        @include right;
+        width: 445px;
+        height: 35px;
+        li {
+            @include left;
+            margin-left: 33px;
+            a {
+                color: #ddd;
+                font-size: 13px;
+                &:hover {
+                    @include color;
+                }
+                .iconfont {
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+} //导航条结束
+// 列表开始
+.table {
+    width: 1349px;
+    height: 1458px;
+    margin: 40px 0;
+    a {
+        margin: 0;
+    }
+    .table-tab {
+        width: 1000px;
+        height: 1458px;
+        margin: 0 auto;
+        .table-one {
+            float: left;
+            width: 218px;
+            height: 1317px;
+            border: 1px solid #eee;
+            background: #fff;
+            .one-yi {
+                width: 218px;
+                height: 139px;
+                >li {
+                    width: 218px;
+                    margin: 2px 0;
+                    h3 {
+                        border-bottom: 1px solid #eee;
+                        height: 45px;
+                        line-height: 45px;
+                        a {
+                            color: #555;
+                            margin-left: 15px;
+                        }
+                        .iconfont {
+                            float: right;
+                            margin-right: 20px;
+                            color: #555;
+                            font-size: 14px;
+                        }
+                    }
+                    .submenu {
+                        display: none;
+                    }
+                    .submenu li {
+                        width: 218px;
+                        height: 36px;
+                        text-align: center;
+                        line-height: 36px;
+                        margin-bottom: 2px;
+                        &:hover span {
+                            color: #169af3;
+                        }
+                        &:hover {
+                            background: #f5f8fb;
+                        }
+                        a {
+                            margin-left: 15px;
+                        }
+                        img {
+                            vertical-align: middle;
+                            margin-top: -2px;
+                        }
+                        span {
+                            margin-left: 4px;
+                            color: #555;
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }
+        .table-two {
+            float: left;
+            width: 750px;
+            height: 1330px;
+            padding-left: 30px;
+            .shoufa-one {
+                margin-top: 15px;
+                width: 750px;
+                height: 57px;
+                border-bottom: 1px dotted #cacaca;
+                line-height: 30px;
+                h3 {
+                    font-size: 30px;
+                    float: left;
+                    color: #333;
+                }
+                span {
+                    float: left;
+                    margin-left: 25px;
+                    margin-right: 20px;
+                    font-size: 14px;
+                    color: #999;
+                }
+                a {
+                    float: right;
+                    width: 112px;
+                    height: 34px;
+                    font-size: 14px;
+                    color: #fff;
+                    background: #169af3;
+                    border-radius: 2px;
+                    &:hover {
+                        background: #158fe1;
+                    }
+                    .iconfont {
+                        margin-left: 18px;
+                    }
+                }
+            }
+            .shoufa-two {
+                width: 750px;
+                height: 1265px;
+                .quanxuan {
+                    margin-top: 24px;
+                    width: 730px;
+                    height: 21px;
+                    padding: 0 10px 10px 10px;
+                }
+                a {
+                    width: 730px;
+                    height: 54px;
+                    padding: 0 10px;
+                    color: #999;
+                    line-height: 54px;
+                    border-bottom: 1px solid #f2f2f2;
+                    .xiao {
+                        font-size: 14px;
+                        color: #333;
+                    }
+                    &:hover span {
+                        color: #009af3;
+                    }
+                    &:hover {
+                        background: #f5f8fb;
+                    }
+                    .icon-new {
+                        font-size: 18px;
+                        color: red;
+                        margin: 0 10px;
+                    }
+                }
+                div {
+                    float: right;
+                    width: 122px;
+                    height: 22px;
+                    color: #999;
+                    .iconfont {
+                        margin-right: 8px;
+                    }
+                }
+            }
+            .shoufa-three {
+                width: 750px;
+                height: 120px;
+                line-height: 120px;
+                text-align: center;
+                font-size: 16px;
+                span {
+                    float: left;
+                    margin-left: 210px;
+                    color: #666;
+                }
+                a {
+                    margin: 42px 0 0 40px;
+                    width: 120px;
+                    height: 36px;
+                    line-height: 36px;
+                    background: #169af3;
+                    border-radius: 2px;
+                    color: #fff;
+                    &:hover {
+                        background: #158fe1;
+                    }
+                }
+            }
+        }
+    }
+} // 列表结束
+// 尾部开始
+.weibu {
+    width: 1349px;
+    height: 289px;
+    background: #2c323b;
+    a {
+        margin: 0;
+    }
+    .weibu-one {
+        display: flex;
+        justify-content: center;
+        width: 1349px;
+        height: 30px;
+        padding: 9px 0;
+        font-size: 12px;
+        border-bottom: 1px solid #3d424a;
+        a {
+            padding: 10px 0 10px 10px;
+            color: #b1b3b9;
+            &::after {
+                content: "|";
+                height: 12px;
+                margin: 0 5px 0 10px;
+                color: #b1b3b9;
+            }
+            &:hover {
+                @include color;
+            }
+        }
+        .zheshi {
+            &::after {
+                content: "";
+            }
+        }
+    }
+    .weibu-two {
+        @include container;
+        height: 150px;
+        margin-top: 40px;
+        p {
+            width: 1000px;
+            height: 30px;
+            @include align;
+            color: #b1b3b9;
+            font-size: 13px;
+            line-height: 30px;
+            a {
+                float: none;
+                color: #999;
+            }
+            .tuyi {
+                display: inline-block;
+                width: 16px;
+                height: 16px;
+                margin-top: -10px;
+                background: url('../images/footer_icon.png');
+            }
+            .tuer {
+                display: inline-block;
+                width: 19px;
+                height: 20px;
+                background: url('../images/logo_down.png');
+            }
+        }
+    }
+} // 尾部结束

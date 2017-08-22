@@ -1,0 +1,475 @@
+@mixin container {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+@mixin left {
+    float: left;
+}
+
+@mixin right {
+    float: right;
+}
+
+@mixin align {
+    text-align: center;
+}
+
+@mixin color {
+    color: #169af3;
+}
+
+//头部开始
+.wang {
+    position: absolute;
+    top: 0;
+    z-index: 30;
+    width: 1366px;
+    height: auto;
+    background: #fff;
+    a {
+        @include left;
+        margin-top: 20.5px;
+    }
+    .header {
+        @include container;
+        height: 78px;
+    }
+    .input {
+        @include left;
+        width: 300px;
+        height: 36px;
+        margin: 20px 0 0 40px;
+        border: 1px solid #ccc;
+        input {
+            width: 249px;
+            height: 24px;
+            padding: 5px 0;
+            margin-left: 14px;
+            border: none;
+            outline: none;
+        }
+    }
+    .sos {
+        @include right;
+        @include align;
+        width: 34px;
+        height: 34px;
+        line-height: 34px;
+        .icon-sousuo1 {
+            font-size: 20px;
+            color: #666;
+        }
+        .icon-sousuo1:hover {
+            @include color;
+        }
+    }
+    .you {
+        @include right;
+        margin-top: 26.5px;
+        width: 402px;
+        height: 25px;
+        line-height: 25px;
+        font-size: 13px;
+
+        .you-a {
+            @include left;
+            height: 18px;
+            margin-top: 3.5px;
+            padding-right: 15px;
+            border-right: 1px solid #dbdbdb;
+            a {
+                margin: -3.5px 15px 0 15px;
+                color: #777;
+                &:hover {
+                    @include color;
+                }
+            }
+        }
+        .you-b {
+            @include right;
+            margin-top: -2.5px;
+            a {
+                margin: 0 0 0 10px;
+                color: #777;
+                display: inline-block;
+                width: 48px;
+                height: 28px;
+                @include align;
+                line-height: 28px;
+                border-radius: 2px;
+            }
+            .yanse-denglu {
+                background: #169af3;
+                color: #fff;
+                border: 1px solid #169af3;
+                &:hover {
+                    background: #0c8ed9;
+                }
+            }
+            .yanse-zhuce {
+                border: 1px solid #dbdbdb;
+                &:hover {
+                    @include color;
+                    border: 1px solid #0c8ed9;
+                }
+            }
+        }
+    }
+}
+
+//头部结束
+//导航条开始
+.navbar {
+    width: 1366px;
+    height: 55px;
+    line-height: 55px;
+    background: #2c323b;
+    a {
+        margin: 0;
+    }
+    .navbar-daohang {
+        @include container;
+        height: 55px;
+        >.navbar-shouye {
+            @include left;
+            li {
+                @include left;
+                a {
+                    padding: 0 30px;
+                    color: #ddd;
+                    font-size: 16px;
+                    height: 55px;
+                    &:hover {
+                        background: #0c8ed9;
+                    }
+                }
+            }
+            .service {
+                position: relative;
+                &:hover .service-list {
+                    display: block;
+                }
+                .service-list {
+                    position: absolute;
+                    background: #2c323b;
+                    top: 55px;
+                    left: 0;
+                    width: 100%;
+                    height: 152px;
+                    line-height: 38px;
+                    text-align: center;
+                    display: none;
+                    z-index: 99;
+                    li {
+                        width: 100%;
+                        a {
+                            height: 38px;
+                            padding: 0 40.37px;
+                            &:hover {
+                                color: #fff;
+                                background: #252b34;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .navbar-shangcheng {
+        @include right;
+        width: 445px;
+        height: 35px;
+        li {
+            @include left;
+            margin-left: 33px;
+            a {
+                color: #ddd;
+                font-size: 13px;
+                &:hover {
+                    @include color;
+                }
+                .iconfont {
+                    font-size: 13px;
+                }
+            }
+        }
+    }
+}
+
+//导航条结束
+// 播放开始
+.bofang {
+    position: relative;
+    margin-top: 133px;
+    width: 1366px;
+    height: 543px;
+    background: #000;
+    .wenben {
+        position: absolute;
+        top: 16px;
+        left: 300px;
+        z-index: 201;
+        width: 840px;
+        height: 493px;
+    }
+    .wenben-one {
+        float: left;
+        width: 260px;
+        height: 352px;
+        img {
+            width: 260px;
+            height: 260px;
+        }
+        >div {
+            margin-top: 40px;
+            padding-left: 16px;
+            width: 246px;
+            height: 50px;
+            a {
+                display: inline-block;
+                width: 230px;
+                height: 50px;
+                text-align: center;
+                line-height: 50px;
+                font-size: 20px;
+                color: #6c6c6c;
+                border: 0.8px solid #6c6c6c;
+                border-radius: 50px;
+                &:hover {
+                    color: #fff;
+                    border: 0.8px solid #fff;
+                }
+            }
+        }
+    }
+    .wenben-two {
+        float: left;
+        margin-left: 116px;
+        width: 460px;
+        height: 500px;
+        h3 {
+            color: #fff;
+            font-size: 24px;
+        }
+        .two-one {
+            padding-top: 9px;
+            width: 460px;
+            height: 24px;
+            line-height: 24px;
+            font-size: 15px;
+            span {
+                color: #fff;
+                opacity: .6;
+            }
+            a {
+                color: #fff;
+            }
+        }
+        .two-two {
+            margin-top: 17px;
+            width: 460px;
+            height: 300px;
+            overflow: hidden;
+            p {
+                width: 420px;
+                height: 34px;
+                line-height: 34px;
+                color: #fff;
+                opacity: .6;
+            }
+        }
+    }
+    .bg-yi {
+        position: absolute;
+        top: 0;
+        left: 200px;
+        width: 1000px;
+        height: 543px;
+        filter: blur(90px);
+        opacity: .6;
+        z-index: 1;
+        background: url(../images/wang.jpg) 0 0 no-repeat;
+        background-size: 1000px 543px;
+    }
+    .bg-er {
+        position: absolute;
+        top: 0;
+        width: 1366px;
+        height: 543px;
+        z-index: 10;
+        background: rgba(0, 0, 0, .35);
+    }
+}
+
+// 播放结束
+// 控制台开始
+.kongzhi {
+    position: fixed;
+    bottom: 0;
+    z-index: 2000;
+    width: 1366px;
+    height: 80px;
+    background: rgba(0, 0, 0, .35);
+    box-shadow: 0 -10px 20px #403f3f;
+    a {
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .paenk {
+        >div {
+            float: left;
+        }
+        margin: 0 auto;
+        width: 960px;
+        height: 80px;
+        line-height: 79px;
+        .play {
+            width: 260px;
+            height: 79px;
+            .yi {
+                width: 36px;
+                height: 36px;
+                background: url(../images/btn.png) 0 -143px no-repeat;
+                &:hover {
+                    background: url(../images/btn.png) -36px -143px no-repeat;
+                }
+            }
+            .er {
+                margin: 0 5px;
+                width: 60px;
+                height: 60px;
+                background: url(../images/btn.png) -120px -60px no-repeat;
+                &:hover {
+                    background: url(../images/btn.png) -60px -60px no-repeat;
+                }
+            }
+            .san {
+                width: 36px;
+                height: 36px;
+                background: url(../images/btn.png) -144px -143px no-repeat;
+                &:hover {
+                    background: url(../images/btn.png) -180px -143px no-repeat;
+                }
+            }
+            .si {
+                margin-left: 40px;
+                width: 60px;
+                height: 60px;
+                img {
+                    width: 60px;
+                    height: 60px;
+                }
+            }
+        }
+        .play-one {
+            margin: 0 30px 0 20px;
+            width: 370px;
+            height: 80px;
+            .one-yi {
+                margin-top: 18px;
+                width: 370px;
+                height: 24px;
+                color: #c4c3c3;
+                line-height: 24px;
+                >span {
+                    float: left;
+                    width: 100px;
+                    height: 24px;
+                    font-size: 13px;
+                }
+                >div {
+                    float: right;
+                    width: 75px;
+                    height: 24px;
+                    font-size: 12px;
+                }
+            }
+            .progress {
+                position: relative;
+                margin-top: 20px;
+                width: 370px;
+                height: 4px;
+                background-color: #484b51;
+                border-radius: 5px;
+                .line {
+                    width: 0;
+                    height: 10px;
+                    background-color: #11a4f0;
+                }
+                .ball {
+                    position: absolute;
+                    left: -5px;
+                    top: -3px;
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 50%;
+                    background-color: #ddd;
+                }
+            }
+        }
+        .play-two {
+            width: 280px;
+            height: 80px;
+            a {
+                margin-right: 30px;
+                width: 16px;
+                height: 16px;
+            }
+            .wu {
+                background: url(../images/btn.png) -64px -195px no-repeat;
+                &:hover {
+                    background: url(../images/btn.png) -80px -195px no-repeat;
+                }
+            }
+            .liu {
+                background: url(../images/btn.png) -64px -179px no-repeat;
+                &:hover {
+                    background: url(../images/btn.png) -80px -179px no-repeat;
+                }
+            }
+            .qi {
+                background: url(../images/btn.png) -239px -32px no-repeat;
+                &:hover {
+                    background: url(../images/btn.png) -255px -32px no-repeat;
+                }
+            }
+            .ba {
+                background: url(../images/btn.png) -239px -0px no-repeat;
+                &:hover {
+                    background: url(../images/btn.png) -255px -0px no-repeat;
+                }
+            }
+            .jiu {
+                margin: 0 0 0 10px;
+                width: 60px;
+                height: 23px;
+                background: url(../images/btn.png) 0 -120px no-repeat;
+                &:hover {
+                    background: url(../images/btn.png) -120px -120px no-repeat;
+                }
+            }
+        }
+    }
+    .shang {
+        position: absolute;
+        bottom: 80px;
+        right: 70px;
+        width: 26px;
+        height: 16px;
+        text-align: center;
+        background: #333;
+        background: url(../images/bar.png) 0 0 no-repeat;
+        a {
+            margin-top: -3px;
+            width: 16px;
+            height: 16px;
+            background: url(../images/btn.png) -140px -211px no-repeat;
+            &:hover {
+                background: url(../images/btn.png) -156px -211px no-repeat;
+            }
+        }
+    }
+}
+
+// 控制台结束

@@ -1,0 +1,241 @@
+.container {
+    width: 1349px;
+    height: 1107px;
+    .tou {
+        margin: 0 auto;
+        width: 960px;
+        height: 40px;
+        background: url('../images/header_bg.jpg')no-repeat 0 bottom;
+        .tou-one {
+            float: right;
+            width: 130px;
+            height: 40px;
+            line-height: 40px;
+            a {
+                font-size: 14px;
+                margin-left: 10px;
+                color: #0c85cc;
+            }
+        }
+    }
+    .kugou {
+        width: 1349px;
+        height: 60px;
+        background: #008ad4;
+        margin-bottom: 40px;
+        .kugou-one {
+            margin: 0 auto;
+            width: 960px;
+            height: 60px;
+            line-height: 60px;
+            img {
+                float: left;
+                margin: 10px 10px 0 0;
+            }
+            .one {
+                float: right;
+            }
+            li {
+                float: left;
+                a {
+                    padding: 0 11px;
+                    color: #fff;
+                }
+            }
+        }
+    }
+    .zhuti {
+        margin: 0 auto;
+        width: 960px;
+        height: 629px;
+        border-bottom: 2px solid #ccc;
+        border-radius: 0 0 5px 5px;
+        margin-bottom: 50px;
+        .border {
+            width: 960px;
+            height: 627px;
+            border: 1px solid #54ade7;
+            border-radius: 0 0 5px 5px;
+        }
+        .zhuce-one {
+            width: 960px;
+            height: 27px;
+            padding: 28px 0 23px 0;
+            border-top: 6px solid #54ade7;
+            text-align: center;
+            span {
+                display: inline-block;
+                width: 128px;
+                height: 28px;
+                background: url('../images/zhuce.png') 204px 400px;
+            }
+        }
+        .zhuce-two {
+            width: 858px;
+            height: 440px;
+            padding: 50px;
+            .you {
+                height: 75px;
+            }
+            >div {
+                margin-bottom: 12px;
+                width: 858px;
+                height: 38px;
+                line-height: 38px;
+                >div {
+                    float: left;
+                }
+                .zuo {
+                    width: 300px;
+                    height: 38px;
+                    color: #474747;
+                    span {
+                        float: right;
+                    }
+                    .iconfont {
+                        float: right;
+                        font-size: 14px;
+                    }
+                }
+                .qiangdu {
+                    margin-top: 10px;
+                    height: 18px;
+                    line-height: 18px;
+                    span {
+                        float: left;
+                        font-size: 12px;
+                        color: #7d7d7d;
+                    }
+                    .shenme {
+                        float: left;
+                        margin: 3px 5px;
+                        width: 169px;
+                        height: 12px;
+                        background: #e0e0e0;
+                        .shenmea {
+                            margin-left: 54px;
+                            width: 3px;
+                            height: 12px;
+                            background: #fff;
+                        }
+                    }
+                }
+            }
+            .yige {
+                height: 22px;
+                padding: 7px;
+                line-height: 22px;
+                width: 275px;
+                color: #7b7b7b;
+                border: 1px solid #ccc;
+                background: #f3f3f3;
+            }
+            .meiyong {
+                width: 136px;
+                float: left;
+            }
+            .youyong {
+                float: left;
+                margin: 1px 0 0 8px;
+                width: 68px;
+                height: 36px;
+                background: #bbb;
+                border-radius: 3px;
+                font-size: 12px;
+                span {
+                    padding: 0 10px;
+                    color: #fff;
+                }
+            }
+            .box {
+                line-height: 38px;
+                font-size: 14px;
+                span {
+                    margin-right: 8px;
+                }
+                a {
+                    color: #71c3e7;
+                }
+            }
+            .boxt {
+                height: 40px;
+                line-height: 40px;
+                padding: 0 25px;
+                font-size: 21px;
+                border: 0;
+                background: #3db9ec;
+                color: #fff;
+                border-radius: 3px;
+                &:hover {
+                    background: #2085e5;
+                }
+            }
+        }
+    }
+} // 尾部开始
+.weibu {
+    width: 1349px;
+    height: 289px;
+    background: #2c323b;
+    a {
+        margin: 0;
+    }
+    .weibu-one {
+        display: flex;
+        justify-content: center;
+        width: 1349px;
+        height: 30px;
+        padding: 9px 0;
+        font-size: 12px;
+        border-bottom: 1px solid #3d424a;
+        a {
+            padding: 10px 0 10px 10px;
+            color: #b1b3b9;
+            &::after {
+                content: "|";
+                height: 12px;
+                margin: 0 5px 0 10px;
+                color: #b1b3b9;
+            }
+            &:hover {
+                color: #169af3;
+            }
+        }
+        .zheshi {
+            &::after {
+                content: "";
+            }
+        }
+    }
+    .weibu-two {
+        width: 1000px;
+        margin: 0 auto;
+        height: 150px;
+        margin-top: 40px;
+        p {
+            width: 1000px;
+            height: 30px;
+            text-align: center;
+            color: #b1b3b9;
+            font-size: 13px;
+            line-height: 30px;
+            a {
+                float: none;
+                color: #999;
+            }
+            .tuyi {
+                display: inline-block;
+                width: 16px;
+                height: 16px;
+                margin-top: -10px;
+                background: url('../images/footer_icon.png');
+            }
+            .tuer {
+                display: inline-block;
+                width: 19px;
+                height: 20px;
+                background: url('../images/logo_down.png');
+            }
+        }
+    }
+} // 尾部结束

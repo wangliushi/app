@@ -22,7 +22,7 @@
 //头部开始
 .wang {
     width: 1349px;
-    height: 2991px;
+    height: 2965px;
     a {
         @include left;
         margin-top: 20.5px;
@@ -121,6 +121,9 @@
     height: 55px;
     line-height: 55px;
     background: #2c323b;
+    a {
+        margin: 0;
+    }
     .navbar-daohang {
         @include container;
         height: 55px;
@@ -133,7 +136,6 @@
                     color: #ddd;
                     font-size: 16px;
                     height: 55px;
-                    margin: 0px;
                     &:hover {
                         background: #0c8ed9;
                     }
@@ -178,10 +180,8 @@
             @include left;
             margin-left: 33px;
             a {
-                padding: 0;
                 color: #ddd;
                 font-size: 13px;
-                margin: 0px;
                 &:hover {
                     @include color;
                 }
@@ -200,6 +200,9 @@
     width: 1349px;
     height: 445px;
     overflow: hidden;
+    a {
+        margin: 0;
+    }
     ul {
         position: absolute;
         top: 0;
@@ -209,9 +212,6 @@
             display: none;
             &:first-child {
                 display: block;
-            }
-            a {
-                margin: 0;
             }
         }
     }
@@ -285,7 +285,6 @@
             display: flex;
             justify-content: space-around;
             a {
-                margin: 0;
                 color: #fff;
                 img {
                     vertical-align: middle;
@@ -302,6 +301,9 @@
     @include container;
     height: 399px;
     margin-top: 40px;
+    a {
+        margin: 0;
+    }
     .gedan {
         float: left;
         width: 655px;
@@ -321,7 +323,6 @@
             }
             a {
                 float: right;
-                margin: 0;
                 font-size: 14px;
                 color: #555;
                 &:hover {
@@ -333,9 +334,6 @@
             width: 655px;
             height: 330px;
             overflow: hidden;
-            a {
-                margin: 0;
-            }
             div {
                 width: 160px;
                 height: 160px;
@@ -489,7 +487,6 @@
             }
             a {
                 float: right;
-                margin: 0;
                 font-size: 14px;
                 color: #555;
                 &:hover {
@@ -502,7 +499,6 @@
             height: 325px;
             >a {
                 position: relative;
-                margin: 0;
                 width: 320px;
                 height: 98px;
                 margin-bottom: 15px;
@@ -578,10 +574,16 @@
     height: 375px;
     margin: 0 auto;
     margin-top: 40px;
+    a {
+        margin: 0;
+    }
     .shoufa {
         float: left;
         width: 650px;
         height: 375px;
+        .hide {
+            display: none;
+        }
         .shoufa-one {
             height: 30px;
             line-height: 30px;
@@ -611,7 +613,6 @@
             }
             a {
                 float: right;
-                margin: 0;
                 padding: 0 7.5px;
                 font-size: 14px;
                 color: #555;
@@ -628,26 +629,28 @@
             a {
                 width: 630px;
                 height: 35px;
-                margin: 0;
                 padding: 0 10px;
                 color: #333;
                 font-size: 13px;
                 line-height: 35px;
-                &:hover {
+                &:hover span {
                     color: #169af3;
                 }
                 &:hover .dier {
                     display: none;
-                } //     &:hover .disan .iconfont {
-                //     display: block;
-                // }
+                }
+                &:hover .disan .iconfont {
+                    display: block;
+                }
                 .dier {
                     margin-left: 5px;
                 }
                 .disan {
                     float: right;
                     .iconfont {
-                        margin-right: 10px; // display: none;
+                        float: left;
+                        margin-right: 10px;
+                        display: none;
                     }
                 }
             }
@@ -681,7 +684,6 @@
             }
             a {
                 float: right;
-                margin: 0;
                 font-size: 14px;
                 color: #555;
                 &:hover {
@@ -692,9 +694,6 @@
         .tuijian-two {
             width: 320px;
             height: 312px;
-            a {
-                margin: 0;
-            }
             .taiyang {
                 position: relative;
                 width: 320px;
@@ -803,7 +802,6 @@
 .kongbai {
     @include container;
     height: 140px;
-    background: #999;
 }
 
 // 热门开始
@@ -811,7 +809,9 @@
     @include container;
     height: 370px;
     margin-top: 40px;
-    background: pink;
+    a {
+        margin: 0;
+    }
     .diantai {
         float: left;
         width: 650px;
@@ -831,7 +831,6 @@
             }
             a {
                 float: right;
-                margin: 0;
                 font-size: 14px;
                 color: #555;
                 &:hover {
@@ -839,48 +838,208 @@
                 }
             }
         }
-    }
-    .diantai-two {
-        width: 650px;
-        height: 310px;
-        background: #fff;
-        a {
-            position: relative;
-            width: 100px;
-            height: 130px;
-            float: left;
-            margin: 0 37px 25px 0;
-            img {
+        .diantai-two {
+            width: 650px;
+            height: 310px;
+            background: #fff;
+            a {
+                position: relative;
                 width: 100px;
-                height: 100px;
-                margin-bottom: 10px;
-            }
-            p {
-                color: #333;
-                font-size: 14px;
-                @include align;
-            }
-            div {
-                position: absolute;
-                top: 0;
-                width: 100px;
-                height: 100px;
-                line-height: 100px;
-                @include align;
-                background: rgba(0, 0, 0, 0.3);
-                border-radius: 50%;
-                display: none;
-                .iconfont {
-                    font-size: 34px;
-                    color: #fff;
+                height: 130px;
+                float: left;
+                margin: 0 37px 25px 0;
+                img {
+                    width: 100px;
+                    height: 100px;
+                    margin-bottom: 10px;
+                }
+                p {
+                    color: #333;
+                    font-size: 14px;
+                    @include align;
+                }
+                div {
+                    position: absolute;
+                    top: 0;
+                    width: 100px;
+                    height: 100px;
+                    line-height: 100px;
+                    @include align;
+                    background: rgba(0, 0, 0, 0.3);
+                    border-radius: 50%;
+                    display: none;
+                    .iconfont {
+                        font-size: 34px;
+                        color: #fff;
+                    }
+                }
+                &:hover div {
+                    display: block;
+                }
+                &:hover p {
+                    @include color;
                 }
             }
-            &:hover div {
-                display: block;
+            .meiyong {
+                margin-right: 0;
             }
-            &:hover p {
-                @include color;
+        }
+    }
+    .geshou {
+        float: right;
+        width: 325px;
+        height: 380px;
+        .geshou-one {
+            height: 30px;
+            line-height: 30px;
+            padding-bottom: 30px;
+            color: #555;
+            background: #fff;
+            h3 {
+                font-size: 30px;
+                float: left;
+                span {
+                    color: #169af3;
+                }
             }
+            div {
+                float: left;
+                margin-left: 20px;
+                a {
+                    float: left;
+                    margin-right: 20px;
+                    font-size: 14px;
+                    color: #111;
+                    &:hover {
+                        color: #169af3;
+                    }
+                }
+                .meiyong {
+                    color: #555;
+                    margin: 0 0 0 5px;
+                }
+            }
+        }
+        .geshou-two {
+            width: 325px;
+            height: 270px;
+            display: none;
+            .datu {
+                position: relative;
+                float: left;
+                width: 160px;
+                height: 160px;
+                margin-bottom: 5px;
+                img {
+                    width: 160px;
+                    height: 160px;
+                }
+                p {
+                    position: absolute;
+                    bottom: 10px;
+                    left: 5px;
+                    font-size: 14px;
+                    color: #fff;
+                }
+                .beijing {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 160px;
+                    height: 160px;
+                    z-index: 10;
+                    display: none;
+                    background: rgba(0, 0, 0, 0.3);
+                }
+                &:hover .beijing {
+                    display: block;
+                }
+            }
+            .yige {
+                margin-right: 5px;
+            }
+            .xiaotu {
+                position: relative;
+                float: left;
+                width: 105px;
+                height: 105px;
+                margin-right: 5px;
+                img {
+                    width: 105px;
+                    height: 105px;
+                }
+                p {
+                    position: absolute;
+                    bottom: 10px;
+                    left: 5px;
+                    font-size: 14px;
+                    color: #fff;
+                }
+                .beijing {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 105px;
+                    height: 105px;
+                    z-index: 10;
+                    display: none;
+                    background: rgba(0, 0, 0, 0.3);
+                }
+                &:hover .beijing {
+                    display: block;
+                }
+            }
+            .liangge {
+                margin-right: 0;
+            }
+        }
+        .geshou-twoo {
+            display: block;
+        }
+        .diandian {
+            width: 48px;
+            height: 6px;
+            margin: 0 auto;
+            margin-top: 20px;
+            a {
+                width: 6px;
+                height: 6px;
+                margin: 0 5px;
+                background: #777;
+                border-radius: 50%;
+                &:hover {
+                    background: #169af3;
+                }
+            }
+        }
+    }
+}
+
+// 热门结束
+// 合作开始
+.hezuo {
+    margin: 0 auto;
+    width: 1010px;
+    height: 276px;
+    h3 {
+        width: 1000px;
+        height: 30px;
+        font-size: 30px;
+        line-height: 30px;
+        padding-bottom: 30px;
+        color: #555;
+        background: #fff;
+        float: left;
+        span {
+            color: #169af3;
+        }
+    }
+    ul {
+        li {
+            font-size: 0;
+            float: left;
+            margin: 0 14px 12px 0;
+            border: 1px dashed #ccc;
         }
         .meiyong {
             margin-right: 0;
@@ -888,4 +1047,119 @@
     }
 }
 
-// 热门结束
+// 合作结束
+// 友情开始
+.youqing {
+    @include container;
+    height: 168px;
+    margin-top: 30px;
+    a {
+        margin: 0;
+    }
+    .youqing-one {
+        height: 30px;
+        font-size: 30px;
+        line-height: 30px;
+        padding-bottom: 30px;
+        color: #555;
+        background: #fff;
+        h3 {
+            float: left;
+            span {
+                color: #169af3;
+            }
+        }
+        a {
+            float: right;
+            font-size: 14px;
+            color: #555;
+            &:hover {
+                color: #169af3;
+            }
+        }
+    }
+    .youqing-two {
+        width: 1000px;
+        height: 108px;
+        a {
+            width: 125px;
+            height: 24px;
+            margin-bottom: 20px;
+            font-size: 13px;
+            color: #555;
+            &:hover {
+                @include color;
+            }
+        }
+    }
+}
+
+// 友情结束
+// 尾部开始
+.weibu {
+    width: 1349px;
+    height: 289px;
+    background: #2c323b;
+    a {
+        margin: 0;
+    }
+    .weibu-one {
+        display: flex;
+        justify-content: center;
+        width: 1349px;
+        height: 30px;
+        padding: 9px 0;
+        font-size: 12px;
+        border-bottom: 1px solid #3d424a;
+        a {
+            padding: 10px 0 10px 10px;
+            color: #b1b3b9;
+            &::after {
+                content: "|";
+                height: 12px;
+                margin: 0 5px 0 10px;
+                color: #b1b3b9;
+            }
+            &:hover {
+                @include color;
+            }
+        }
+        .zheshi {
+            &::after {
+                content: "";
+            }
+        }
+    }
+    .weibu-two {
+        @include container;
+        height: 150px;
+        margin-top: 40px;
+        p {
+            width: 1000px;
+            height: 30px;
+            @include align;
+            color: #b1b3b9;
+            font-size: 13px;
+            line-height: 30px;
+            a {
+                float: none;
+                color: #999;
+            }
+            .tuyi {
+                display: inline-block;
+                width: 16px;
+                height: 16px;
+                margin-top: -10px;
+                background: url('../images/footer_icon.png');
+            }
+            .tuer {
+                display: inline-block;
+                width: 19px;
+                height: 20px;
+                background: url('../images/logo_down.png');
+            }
+        }
+    }
+}
+
+// 尾部结束
